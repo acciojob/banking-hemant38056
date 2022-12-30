@@ -41,4 +41,12 @@ public class SavingsAccount extends BankAccount{
 
     }
 
+    public double getRate(){
+        return this.rate;
+    }
+
+    public double getMaxWithdrawalLimit(){
+        return this.maxWithdrawalLimit;
+    }
+
 }

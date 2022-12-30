@@ -44,4 +44,12 @@ public class BankAccount {
         this.balance = newBalance;
     }
 
+    public String getName(){
+        return this.name;
+    }
+
+    public double getMinBalance(){
+        return this.minBalance;
+    }
+
 }
