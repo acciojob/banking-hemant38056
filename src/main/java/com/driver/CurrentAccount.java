@@ -6,6 +6,13 @@ public class CurrentAccount extends BankAccount{
     public CurrentAccount(String name, double balance, String tradeLicenseId) throws Exception {
         // minimum balance is 5000 by default. If balance is less than 5000, throw "Insufficient Balance" exception
 
+        super(name, balance, 5000);
+        if(balance < 5000){
+            throw new Exception("Insufficient Balance");
+        }
+        this.tradeLicenseId = tradeLicenseId;
+
+
     }
 
     public void validateLicenseId() throws Exception {
